@@ -7,7 +7,6 @@ import info.bitrich.xchangestream.okcoin.OkxStreamingTradeService;
 import info.bitrich.xchangestream.okcoin.dto.okx.enums.OkxInstType;
 import org.knowm.xchange.ExchangeSpecification;
 import org.knowm.xchange.currency.CurrencyPair;
-import org.knowm.xchange.derivative.FuturesContract;
 import org.knowm.xchange.instrument.Instrument;
 import org.knowm.xchange.okex.v5.OkexAdapters;
 
