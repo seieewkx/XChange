@@ -34,11 +34,17 @@ public class OkxStreamingTradeServiceExample {
 
         OkxStreamingTradeService tradeService = new OkxStreamingTradeService(service);
         Instrument instrument = CurrencyPair.BTC_USDT;
-        tradeService.getUserTrades(
+        tradeService.getOrderChanges(
                 instrument
                 , OkxInstType.SPOT
                 , OkexAdapters.adaptCurrencyPairId(instrument)
                 , OkexAdapters.adaptInstrumentId(instrument)
         ).forEach(System.out::println);
+//        tradeService.getUserTrades(
+//                instrument
+//                , OkxInstType.SPOT
+//                , OkexAdapters.adaptCurrencyPairId(instrument)
+//                , OkexAdapters.adaptInstrumentId(instrument)
+//        ).forEach(System.out::println);
     }
 }

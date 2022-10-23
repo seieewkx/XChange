@@ -93,7 +93,7 @@ public class OkexAdapters {
                         new CurrencyPair(order.getInstrumentId()),
                         order.getOrderId(),
                         new Date(Long.parseLong(order.getCreationTime())),
-                        new BigDecimal(order.getPrice()),
+                        new BigDecimal(order.getPrice().isEmpty() ? "0" : order.getPrice()),
                         order.getAverageFilledPrice().isEmpty()
                             ? BigDecimal.ZERO
                             : new BigDecimal(order.getAverageFilledPrice()),
